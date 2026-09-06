@@ -1,5 +1,6 @@
-export class SharedObject
-{
+import { EventDispatcher } from "../events/EventDispatcher";
+
+export class SharedObject extends EventDispatcher {
 	public data : Object;
 	private _object_name : string;
 
@@ -9,6 +10,7 @@ export class SharedObject
 
 	constructor(name:string)
 	{
+		super();
 		this._object_name=name;
 		if(typeof(Storage) !== "undefined") {
 			this.data = JSON.parse(localStorage.getItem(name));

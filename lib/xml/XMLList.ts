@@ -11,8 +11,7 @@ import {XML} from "./XML"
  * <codeph class="+ topic/ph pr-d/codeph ">for each..in</codeph> statement, for example) and apply the methods to each XML object in
  * the collection.</p>
  */
-export class XMLList
-{
+export class XMLList extends Object {
 
 	/**
 	 * Creates a new XMLList object.
@@ -20,8 +19,7 @@ export class XMLList
 	 * @langversion	3.0
 	 * @playerversion	Flash 9
 	 */
-	constructor (value:any=null){
-	}
+	constructor (value:any=null){super();}
 
 	public addNamespace (ns:any) : XML{
 		console.log("addNamespace not implemented yet in flash/XMLList");

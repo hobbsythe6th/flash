@@ -3,8 +3,7 @@
  * The SoundTransform class contains properties for volume and panning.
  *
  */
-export class SoundTransform
-{
+export class SoundTransform extends Object {
 
 	// for AVM1:
 	public axCallPublicProperty(value1:any, value2:any):any{
@@ -39,7 +38,7 @@ export class SoundTransform
 	 * @refpath
 	 */
 	constructor (vol:number=1, panning:number=0){
-
+		super();
 	}
 	/**
 	 * A value, from 0 (none) to 1 (all), specifying how much of the left input is played in the

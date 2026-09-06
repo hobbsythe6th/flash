@@ -1,4 +1,3 @@
-
 export interface IEventMapper{
 	adaptedType:string;
 	addListener:any;

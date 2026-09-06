@@ -1,7 +1,7 @@
 
 import {ApplicationDomain} from "../system/ApplicationDomain";
 import {SecurityDomain} from "../system/SecurityDomain";
-export class LoaderContext{
+export class LoaderContext extends Object {
 
 	//for AVM1:
 	public _avm1Context:any;

@@ -1,4 +1,4 @@
-export class Capabilities{
+export class Capabilities extends Object {
 
 	public static  get playerType():string
 	{

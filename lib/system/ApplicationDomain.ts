@@ -27,8 +27,7 @@ import {Sound} from "../media/Sound";
  * @internal	Security considerations for application domains are discussed in the
  *   applicationDomain property entries of URLRequest and LoaderInfo.
  */
-export class ApplicationDomain
-{
+export class ApplicationDomain extends Object {
 	private static _systemDomain:ApplicationDomain;
 	private static getSystemDomain():ApplicationDomain{
 		if(ApplicationDomain._systemDomain==null)

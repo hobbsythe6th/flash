@@ -18,8 +18,7 @@
  * different users can see different formatting results, even when using the same locale ID.
  * </p>
  */
-export class NumberFormatter
-{
+export class NumberFormatter extends Object {
 	/**
 	 * The name of the actual locale ID used by this NumberFormatter object.
 	 *

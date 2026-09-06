@@ -4,7 +4,4 @@
  * or DisplayObject.
  */
 export interface IBitmapDrawable
-{
-
-}
-
+{}

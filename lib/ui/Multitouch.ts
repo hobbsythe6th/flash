@@ -14,7 +14,7 @@
  * the current environment supports touch input.</p><p class="- topic/p ">You cannot create a Multitouch object directly from ActionScript code. If you call <codeph class="+ topic/ph pr-d/codeph ">new Multitouch()</codeph>, an exception is thrown.</p><p class="- topic/p "><b class="+ topic/ph hi-d/b ">Note:</b> The Multitouch feature is not supported for SWF files embedded in HTML running on Mac OS.</p>
  *
  */
-export class Multitouch {
+export class Multitouch extends Object{
 	/**
 	 * Identifies the multi-touch mode for touch and gesture event handling. Use this property to manage
 	 * whether or not events are dispatched as touch events with multiple points of contact and specific events
@@ -79,6 +79,6 @@ export class Multitouch {
 		return false;
 	}
 
-	constructor (){}
+	constructor (){super();}
 }
 

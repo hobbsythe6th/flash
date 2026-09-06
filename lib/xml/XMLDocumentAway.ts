@@ -1,6 +1,7 @@
 import { XMLNode } from "./XMLNode";
 import { XMLNodeType } from "./XMLNodeType";
 
+// Currently, XMLDocument is a JS builtin, hence the flash version is marked as Away
 /**
  * The XMLDocument class represents the legacy XML object
  * that was present in ActionScript 2.0. It was renamed in ActionScript 3.0
@@ -123,4 +124,3 @@ export class XMLDocumentAway extends XMLNode
 	}
 
 }
-

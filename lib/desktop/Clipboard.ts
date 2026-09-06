@@ -31,7 +31,7 @@ import {ByteArray} from "../utils/ByteArray";
  * will be unsuccessful. The same restriction applies in AIR for content outside the
  * application sandbox.</p><p class="- topic/p ">On Linux, clipboard data does not persist when an AIR application closes.</p>
  */
-export class Clipboard
+export class Clipboard extends Object
 {
 	
 	//todo: only dummy class yet
@@ -47,7 +47,6 @@ export class Clipboard
 	public get formats () : any[]{
 		console.log("formats not implemented yet in flash/Clipboard");
 		return [];
-
 	}
 
 	/**
@@ -71,7 +70,6 @@ export class Clipboard
 	public static get generalClipboard () : Clipboard{
 		console.log("generalClipboard not implemented yet in flash/Clipboard");
 		return null;
-
 	}
 
 	/**
@@ -108,9 +106,7 @@ export class Clipboard
 	 * @internal	the example located at examples\Clipboard.clipboard.1.as should not be displayed with FP10 docs because FP10 will console.log an error when new Clipboard() is called.
 	 * @throws	IllegalOperationError new Clipboard() is not supported in Flash Player, since only the operating system clipboard can be used in Flash Player. For copy-and-paste operations involving the operating system clipboard, use the Clipboard.generalClipboard object rather than creating a new Clipboard object. Does not console.log an error in an AIR application.
 	 */
-	constructor (){
-
-	}
+	constructor (){super();}
 
 	/**
 	 * Gets the clipboard data if data in the specified format is present.

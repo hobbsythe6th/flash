@@ -6,8 +6,7 @@
  * which support E4X (ECMAScript for XML).
  * The XMLNode class is present for backward compatibility.
  */
-export class XMLNode
-{
+export class XMLNode extends Object {
 	/**
 	 * Creates a new XMLNode object. You must use the constructor to create an XMLNode object before you
 	 * call any of the methods of the XMLNode class.
@@ -17,6 +16,7 @@ export class XMLNode
 	 * @param	value	The XML text parsed to create the new XMLNode object.
 	 */
 	constructor (type:number, value:string){
+		super();
 	}
 
 	// for AVM1:

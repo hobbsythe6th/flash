@@ -1,4 +1,4 @@
-export class SecurityDomain{
+export class SecurityDomain extends Object {
 
 	//todo!
 }

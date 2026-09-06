@@ -1,5 +1,3 @@
-
-export class BitmapFilter {
-	constructor() {
-	}
+export class BitmapFilter extends Object {
+	constructor() {super();}
 }

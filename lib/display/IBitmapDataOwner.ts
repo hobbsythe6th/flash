@@ -2,7 +2,4 @@
  *
  */
 export interface IBitmapDataOwner
-{
-
-}
-
+{}

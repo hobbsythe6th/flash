@@ -5,10 +5,9 @@
  * For more information, see the entry for <codeph class="+ topic/ph pr-d/codeph ">Sound.id3</codeph> and
  * the ID3 tag definitions at <xref href="http://www.id3.org" class="- topic/xref ">http://www.id3.org</xref>.
  */
-export class ID3Info
-{
-	constructor (){
-
+export class ID3Info extends Object {
+	constructor () {
+		super();
 	}
 	/**
 	 * The name of the album; corresponds to the ID3 2.0 tag TALB.

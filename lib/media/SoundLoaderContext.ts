@@ -6,8 +6,7 @@
  * <codeph class="+ topic/ph pr-d/codeph ">load()</codeph> method of the Sound class.
  *
  */
-export class SoundLoaderContext
-{
+export class SoundLoaderContext extends Object {
 
 	/**
 	 * Creates a new sound loader context object.
@@ -17,7 +16,7 @@ export class SoundLoaderContext
 	 *   should be checked upon loading the object (true) or not.
 	 */
 	constructor (bufferTime:number=1000, checkPolicyFile:boolean=false){
-
+		super();
 	}
 	/**
 	 * The number of milliseconds to preload a streaming sound into a buffer

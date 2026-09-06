@@ -14,7 +14,7 @@ import { SceneImage2D } from "@awayjs/scene"
 
 import {IBitmapDataOwner} from "./IBitmapDataOwner";
 
-export class BitmapData implements IBitmapDrawable, IAssetAdapter
+export class BitmapData extends Object implements IBitmapDrawable, IAssetAdapter
 {
 	private _adaptee:SceneImage2D;
 	private _owners:Array<IBitmapDataOwner> = new Array<IBitmapDataOwner>();
@@ -38,6 +38,7 @@ export class BitmapData implements IBitmapDrawable, IAssetAdapter
 
 	constructor (width:number, height:number, transparent:boolean=true, fillColor:number=0xffffffff)
 	{
+		super();
 		this._adaptee = new SceneImage2D(width, height, transparent, fillColor, false, StageManager.getInstance().getStageAt(0));
 		this._adaptee.adapter = this;
 	}

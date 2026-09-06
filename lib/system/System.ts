@@ -11,8 +11,7 @@ import { IME } from "./IME";
  * Security class.</p><p class="- topic/p ">This class contains only static methods and properties. You cannot
  * create new instances of the System class.</p>
  */
-export class System
-{
+export class System extends Object {
 	constructor (){		
 	}
 	/**

@@ -1,4 +1,4 @@
-export class Endian{
+export class Endian extends Object {
 
 	/**
 	 * Indicates the most significant byte of the multibyte number appears first in the sequence of bytes.

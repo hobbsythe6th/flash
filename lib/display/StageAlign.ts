@@ -1,5 +1,4 @@
-export class StageAlign
-{
+export class StageAlign extends Object {
 	public static BOTTOM:string = "B";
 	public static BOTTOM_LEFT:string = "BL";
 	public static BOTTOM_RIGHT:string = "BR";
@@ -8,5 +7,4 @@ export class StageAlign
 	public static TOP:string = "T";
 	public static TOP_LEFT:string = "TL";
 	public static TOP_RIGHT:string = "TR";
-
 }

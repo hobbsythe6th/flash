@@ -1,4 +1,4 @@
-export class Mouse{
+export class Mouse extends Object {
 	private static _cursor:string;
 	/*
 	 The name of the native cursor.

@@ -2,8 +2,7 @@
  * The MultitouchInputMode class provides values for the <codeph class="+ topic/ph pr-d/codeph ">inputMode</codeph> property in the flash.ui.Multitouch class.
  * These values set the type of touch events the Flash runtime dispatches when the user interacts with a touch-enabled device.
  */
-export class MultitouchInputMode
-{
+export class MultitouchInputMode extends Object {
 	/**
 	 * Specifies that TransformGestureEvent, PressAndTapGestureEvent, and GestureEvent events are dispatched for the related user interaction supported by the current environment,
 	 * and other touch events (such as a simple tap) are interpreted as mouse events.

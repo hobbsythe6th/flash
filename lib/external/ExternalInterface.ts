@@ -1,6 +1,4 @@
-
-export class ExternalInterface
-{
+export class ExternalInterface extends Object {
 	static available:boolean; // read only
 
 	static addCallback(methodName:string, instance:any, method:Function):boolean{

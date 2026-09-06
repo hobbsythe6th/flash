@@ -1,4 +1,3 @@
-
 import {InteractiveObject} from "../display/InteractiveObject";
 import { Event } from "./Event";
 
