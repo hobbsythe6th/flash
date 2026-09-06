@@ -1,5 +1,11 @@
-import {IDisplayObjectAdapter, MovieClip as AwayMovieClip, DisplayObject as AwayDisplayObject, IMovieClipAdapter, SceneGraphPartition} from "@awayjs/scene";
-import {Sprite} from "./Sprite";
+import {
+	IDisplayObjectAdapter,
+	IMovieClipAdapter,
+	SceneGraphPartition,
+	MovieClip as AwayMovieClip,
+	DisplayObject as AwayDisplayObject
+} from "@awayjs/scene";
+import { Sprite } from "./Sprite";
 
 var includeString:string= '';//TODO
 
@@ -40,7 +46,7 @@ export class MovieClip extends Sprite implements IMovieClipAdapter
 	}
 	
 
-	//forAVM1:
+	// for AVM1:
 	public _getAbsFrameNumber(param1:any, param2:any):number{
 		return 0;
 	}

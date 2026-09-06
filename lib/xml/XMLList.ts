@@ -13,7 +13,6 @@ import {XML} from "./XML"
  */
 export class XMLList
 {
-	public static length : any;
 
 	/**
 	 * Creates a new XMLList object.
@@ -55,7 +54,7 @@ export class XMLList
 	 * @langversion	3.0
 	 * @playerversion	Flash 9
 	 */
-	public attributes () : XMLList{
+	public attributes() : XMLList{
 		console.log("attributes not implemented yet in flash/XMLList");
 		return null;
 	}
@@ -63,17 +62,17 @@ export class XMLList
 	/**
 	 * Calls the child() method of each XML object and returns an XMLList object that
 	 * contains the results in order.
-	 * @param	propertyName	The element name or integer of the XML child.
+	 * @param  propertyName	The element name or integer of the XML child.
 	 * @return	An XMLList object of child nodes that match the input parameter.
 	 * @langversion	3.0
 	 * @playerversion	Flash 9
 	 */
-	public child (propertyName:any) : XMLList{
+	public child(propertyName:any) : XMLList{
 		console.log("child not implemented yet in flash/XMLList");
 		return null;
 	}
 
-	public childIndex () : number{
+	public childIndex() : number{
 		console.log("childIndex not implemented yet in flash/XMLList");
 		return 0;
 	}
@@ -85,7 +84,7 @@ export class XMLList
 	 * @langversion	3.0
 	 * @playerversion	Flash 9
 	 */
-	public children () : XMLList{
+	public children() : XMLList{
 		console.log("children not implemented yet in flash/XMLList");
 		return null;
 	}
@@ -97,7 +96,7 @@ export class XMLList
 	 * @langversion	3.0
 	 * @playerversion	Flash 9
 	 */
-	public comments () : XMLList{
+	public comments() : XMLList{
 		console.log("comments not implemented yet in flash/XMLList");
 		return null;
 	}
@@ -123,7 +122,7 @@ export class XMLList
 	 * @langversion	3.0
 	 * @playerversion	Flash 9
 	 */
-	public copy () : XMLList{
+	public copy() : XMLList{
 		console.log("copy not implemented yet in flash/XMLList");
 		return null;
 	}
@@ -171,7 +170,7 @@ export class XMLList
 	 * @langversion	3.0
 	 * @playerversion	Flash 9
 	 */
-	public hasComplexContent () : boolean{
+	public hasComplexContent() : boolean{
 		console.log("hasComplexContent not implemented yet in flash/XMLList");
 		return false;
 	}
@@ -197,12 +196,12 @@ export class XMLList
 	 * @langversion	3.0
 	 * @playerversion	Flash 9
 	 */
-	public hasSimpleContent () : boolean{
+	public hasSimpleContent() : boolean{
 		console.log("hasSimpleContent not implemented yet in flash/XMLList");
 		return false;
 	}
 
-	public inScopeNamespaces () : any[]{
+	public inScopeNamespaces() : any[]{
 		console.log("inScopeNamespaces not implemented yet in flash/XMLList");
 		return [];
 	}
@@ -223,17 +222,17 @@ export class XMLList
 	 * @langversion	3.0
 	 * @playerversion	Flash 9
 	 */
-	public length () : number{
+	public length() : number{
 		console.log("length not implemented yet in flash/XMLList");
 		return 0;
 	}
 
-	public localName () : any{
+	public localName() : any{
 		console.log("localName not implemented yet in flash/XMLList");
 		return null;
 	}
 
-	public name () : any{
+	public name() : any{
 		console.log("name not implemented yet in flash/XMLList");
 		return null;
 	}
@@ -243,12 +242,12 @@ export class XMLList
 		return null;
 	}
 
-	public namespaceDeclarations () : any[]{
+	public namespaceDeclarations() : any[]{
 		console.log("namespaceDeclarations not implemented yet in flash/XMLList");
 		return [];
 	}
 
-	public nodeKind () : string{
+	public nodeKind() : string{
 		console.log("nodeKind not implemented yet in flash/XMLList");
 		return "";
 	}
@@ -262,7 +261,7 @@ export class XMLList
 	 * @langversion	3.0
 	 * @playerversion	Flash 9
 	 */
-	public normalize () : XMLList{
+	public normalize() : XMLList{
 		console.log("normalize not implemented yet in flash/XMLList");
 		return null;
 	}
@@ -274,7 +273,7 @@ export class XMLList
 	 * @langversion	3.0
 	 * @playerversion	Flash 9
 	 */
-	public parent () : any{
+	public parent() : any{
 		console.log("parent not implemented yet in flash/XMLList");
 		return null;
 	}
@@ -346,7 +345,7 @@ export class XMLList
 	 * @langversion	3.0
 	 * @playerversion	Flash 9
 	 */
-	public text () : XMLList{
+	public text() : XMLList{
 		console.log("text not implemented yet in flash/XMLList");
 		return null;
 	}
@@ -365,11 +364,11 @@ export class XMLList
 	 * end tag. If the XML object has complex content, toString() returns an XML encoded string
 	 * representing the entire XML object, including the start tag, attributes, namespace declarations,
 	 * and end tag.To return the entire XML object every time, use the toXMLString() method.
-	 * @return	The string representation of the XML object.
+	 * @return {string} The string representation of the XML object.
 	 * @langversion	3.0
 	 * @playerversion	Flash 9
 	 */
-	public toString () : string{
+	public toString() : string{
 		console.log("toString not implemented yet in flash/XMLList");
 		return "";
 	}
@@ -381,22 +380,22 @@ export class XMLList
 	 * and end tag of the XML object, regardless of whether the XML object has simple content
 	 * or complex content. (The toString() method strips out these items for XML
 	 * objects that contain simple content.)
-	 * @return	The string representation of the XML object.
+	 * @return {string} The string representation of the XML object.
 	 * @langversion	3.0
-	 * @playerversion	Flash 9
+	 * @playerversion Flash 9
 	 */
-	public toXMLString () : string{
+	public toXMLString() : string{
 		console.log("toXMLString not implemented yet in flash/XMLList");
 		return "";
 	}
 
 	/**
 	 * Returns the XMLList object.
-	 * @return	Returns the current XMLList object.
+	 * @return {XMLList} Returns the current XMLList object.
 	 * @langversion	3.0
-	 * @playerversion	Flash 9
+	 * @playerversion Flash 9
 	 */
-	public valueOf () : XMLList{
+	public valueOf() : XMLList{
 		console.log("valueOf not implemented yet in flash/XMLList");
 		return null;
 	}

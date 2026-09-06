@@ -92,7 +92,7 @@ export class DisplayObject extends EventDispatcher implements IDisplayObjectAdap
 
 	 */
 
-	constructor(adaptee:AwayDisplayObject = null)
+	constructor(adaptee:AwayDisplayObject | null = null)
 	{
 		super();
 
@@ -182,6 +182,10 @@ export class DisplayObject extends EventDispatcher implements IDisplayObjectAdap
 	public doInitEvents():void
 	{
 
+	}
+
+	public initAdapter():void
+	{
 	}
 
 	public isBlockedByScript():boolean

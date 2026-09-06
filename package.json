@@ -1,7 +1,7 @@
 {
-  "name": "@as3web/flash",
+  "name": "flash",
   "version": "0.1.119",
-  "description": "Typescript classes mimicing the functionality of the flash package in AS3",
+  "description": "Typescript classes mimicking the functionality of the flash package in AS3",
   "main": "bundle/as3web-flash.umd.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,19 +9,19 @@
   "author": "Rob Bateman",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/as3web/flash.git"
+    "url": "git+https://github.com/hobbsythe6th/flash.git"
   },
   "scripts": {
     "rimraf": "rimraf",
     "rollup": "rollup -c",
     "uglifyjs": "uglifyjs ./bundle/as3web-flash.umd.js -o ./bundle/as3web-flash.umd.min.js --in-source-map ./bundle/as3web-flash.umd.js.map --source-map --output ./bundle/as3web-flash.umd.min.js.map --mangle",
     "tsc": "tsc --lib ES2015.Symbol,DOM,ScriptHost,ES5,ES2015.Iterable",
-    "clean": "npm cache clean && npm run rimraf -- node_modules dist bundle",
-    "clean:dist": "npm run rimraf -- dist bundle",
-    "watch": "npm run tsc -- --w",
-    "prebuild": "npm run clean:dist",
-    "build": "npm run tsc && npm run rollup && npm run uglifyjs",
-    "version": "npm run build",
+    "clean": "npm cache clean && yarn rimraf -- node_modules dist bundle",
+    "clean:dist": "yarn rimraf -- dist bundle",
+    "watch": "yarn tsc -- --w",
+    "prebuild": "yarn clean:dist",
+    "build": "yarn tsc && yarn rollup && yarn uglifyjs",
+    "version": "yarn build",
     "postversion": "git push && git push --tags && npm publish"
   },
   "keywords": [
@@ -33,32 +33,32 @@
   ],
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/as3web/flash/issues"
+    "url": "https://github.com/hobbsythe6th/flash/issues"
   },
-  "homepage": "https://github.com/as3web/flash#readme",
+  "homepage": "https://github.com/hobbsythe6th/flash#readme",
   "peerDependencies": {
     "@awayjs/core": "^0.8.0",
-    "@awayjs/stage": "^0.10.0",
     "@awayjs/graphics": "^0.4.0",
-    "@awayjs/scene": "^0.12.0",
-    "@awayjs/renderer": "^0.10.0",
     "@awayjs/materials": "^0.5.0",
+    "@awayjs/renderer": "^0.10.0",
+    "@awayjs/scene": "^0.12.0",
+    "@awayjs/stage": "^0.10.0",
     "@awayjs/view": "^0.5.0",
     "tslib": "^1.9.0"
   },
   "devDependencies": {
-    "@awayjs/core": "^0.8.0",
-    "@awayjs/stage": "^0.10.0",
-    "@awayjs/graphics": "^0.4.0",
-    "@awayjs/scene": "^0.12.0",
-    "@awayjs/renderer": "^0.10.0",
-    "@awayjs/materials": "^0.5.0",
-    "@awayjs/view": "^0.5.0",
-    "tslib": "^1.9.0",
+    "@awayjs/core": "^0.9.60",
+    "@awayjs/graphics": "^0.5.101",
+    "@awayjs/materials": "^0.6.24",
+    "@awayjs/renderer": "^0.11.99",
+    "@awayjs/scene": "^0.13.322",
+    "@awayjs/stage": "^0.11.171",
+    "@awayjs/view": "^0.6.90",
     "rimraf": "^2.5.2",
-    "rollup": "^0.36.4",
-    "rollup-plugin-includepaths": "^0.2.1",
-    "typescript": "2.2.0-dev.20161123",
-    "uglify-js": "^3.0.15"
+    "rollup-plugin-includepaths": "^0.2.4",
+    "tslib": "^1.9.0",
+    "typescript": "3.7.3",
+    "uglify-js": "^3.19.3",
+    "rollup": "^0.36.4"
   }
 }
